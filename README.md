@@ -14,16 +14,16 @@ B. kubectl apply -k overlay\redis
 
 
 Tests:
-** Verify if cache is working
+*Verify if cache is working*
 1. Use port forwarding to forward the port 9898
 A.  kubectl port-forward <pod-name> 9898:9898
 2. Open postman and send a post query with data for key: "http://localhost:9898/cache/test"
 3. Send a GET query for key: "http://localhost:9898/cache/test"
 
-** Update the color or Ui message:
+*Update the color or Ui message:*
 1. Update the environment variable in deploy.yaml file and deploy the resources again.
 
-Key features added or could be considered:
+*Key features added or could be considered:*
 1. Redis is currently added as a single instance and only leader but followers could be added as read replicas for scaling
 2. HPA has been added for podinfo deployments with minimum replica set to 2.
 
