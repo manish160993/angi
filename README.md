@@ -33,3 +33,9 @@ kubectl port-forward <pod-name> 9898:9898
 1. Redis is currently added as a single instance and only leader but followers could be added as read replicas for scaling
 2. HPA has been added for podinfo deployments with minimum replica set to 2.
 
+
+References:
+https://formulae.brew.sh/formula/kustomize
+https://kubernetes.io/docs/tutorials/stateless-application/guestbook/
+https://github.com/stefanprodan/podinfo/blob/master/README.md
+https://www.densify.com/kubernetes-tools/kustomize/
